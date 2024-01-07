@@ -1,0 +1,27 @@
+﻿@TodoAPI_HostAddress = https://localhost:7183
+@AccessToken = CfDJ8KADXC4QgeJDvouVhH0gRL18ofo2UlY_EgBAlJEIH2R9sh3heQnXJq0mbkBuHLQMcAvNUBHCKykIgO4N44Kxi4KrHnkA7mazP7EW7qVudyeksDKGX9jrOa8w9HJzz8Kb0GpNEOHVZ8myYLsn8pR0DPYdYNDESnvLSZN7w56V-KWmtHCJiJLDLnlViGDoMJYvXI4dUi7-Fqt8ZsOVK9hE_auYOnzz6s8tJ2I-Ep2oGdptAKxrjtbDVN-Rd5RluIqGCM9CkWoxCUJQEhVkCHChz-OHEFDXMSVaYHIbxwu2Q9iWLrwA0iYvq4qoxuMncObamvAD6F8lmDj28x5T8OoGLzlP9mjAo4qbVJy-EHAiXTFfN1EVDm7iCuvqegIyygK6nZfNTsbHQL7ysEC544vMz8Hu4Xlm_XeQikxBs1cPtQMckyQDzVDL7EaMOqXOBuIGkRT8D4r4FGYqyqU3tACOmkmHUJUnRP9AYkUKbyvBS-S0mbT4ma7nZzkL2W52Q00u0lFsjqxRM25GmdtrASk7UeQ6Pt06150VTMsgtGyAM2Gss0fFT33ga6xYFRp9WK6lQTJ7VJvRkpCSyDwONv_nQeWoKFXx4e7_KMrcO5GhZboGjnAOZzkT6wcYYOfaHxi2cwf5uv5PdMJqSOERBxHwJXUVtUuLm0R_S3qWNzuZYLnMxJYXmCaccSVYL_7a-lSs-Q
+
+GET {{TodoAPI_HostAddress}}/todoitems/5
+
+###
+POST {{TodoAPI_HostAddress}}/todoitems/3
+Content-Type: application/json
+Authorization: Bearer {{AccessToken}}
+
+{
+  "title": "Oslavit s Alicou",
+  "text": "doniest kvety!",
+  "deadline": "2024-01-20"
+}
+###
+PUT {{TodoAPI_HostAddress}}/todoitems/5
+Content-Type: application/json
+Authorization: Bearer {{AccessToken}}
+
+{
+  "title": "Prihlasit sa na kurz",
+  "text": "",
+  "deadline": "2035-01-01",
+  "flag":"canceled"
+}
+###
